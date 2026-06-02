@@ -1,5 +1,5 @@
 ﻿"""
-Smart AI Resume - Main Application
+CareerIQ- Main Application
 """
 import time
 from PIL import Image
@@ -39,7 +39,7 @@ import datetime
 
 # Set page config at the very beginning
 st.set_page_config(
-    page_title="Smart AI Resume",
+    page_title="CareerIQ",
     page_icon="🚀",
     layout="wide"
 )
@@ -1143,7 +1143,7 @@ class ResumeApp:
         # Hero Section
         st.markdown("""
             <div class="hero-section">
-                <h1 class="hero-title">About Smart AI Resume</h1>
+                <h1 class="hero-title">About CareerIQ</h1>
                 <p class="hero-subtitle">A powerful AI-driven platform for optimizing your resume</p>
             </div>
         """, unsafe_allow_html=True)
@@ -1170,7 +1170,7 @@ class ResumeApp:
                 </div>
                 <p class="bio-text">
                     Hello! I'm a Computer Science student passionate about AI-driven applications, problem-solving, and building useful software tools.
-                    I created Smart AI Resume to revolutionize how job seekers approach their career journey.
+                    I created CareerIQ to revolutionize how job seekers approach their career journey.
                     With my background in both software development and AI, I've designed this platform to
                     provide intelligent, data-driven insights for resume optimization.
                 </p>
@@ -1186,7 +1186,7 @@ class ResumeApp:
                 <i class="fas fa-lightbulb vision-icon"></i>
                 <h2 class="vision-title">Our Vision</h2>
                 <p class="vision-text">
-                    "Smart AI Resume represents my vision of democratizing career advancement through technology.
+                    "CareerIQ represents my vision of democratizing career advancement through technology.
                     By combining cutting-edge AI with intuitive design, this platform empowers job seekers at
                     every career stage to showcase their true potential and stand out in today's competitive job market."
                 </p>
@@ -2791,7 +2791,7 @@ class ResumeApp:
         
         # Hero Section
         hero_section(
-            "Smart AI Resume",
+            "CareerIQ",
             "Transform your career with AI-powered resume analysis and building. Get personalized insights and create professional resumes that stand out."
         )
         
@@ -2897,7 +2897,7 @@ class ResumeApp:
         # Admin login/logout in sidebar
         with st.sidebar:
             st_lottie(self.load_lottie_url("https://assets5.lottiefiles.com/packages/lf20_xyadoh9h.json"), height=200, key="sidebar_animation")
-            st.title("Smart AI Resume")
+            st.title("CareerIQ")
             st.markdown("---")
             
             # Navigation buttons

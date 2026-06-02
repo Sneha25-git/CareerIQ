@@ -16,8 +16,15 @@ options.add_argument("--headless")
 options.add_argument("--no-sandbox")
 options.add_argument("--disable-dev-shm-usage")
 options.add_argument("--disable-gpu")
+options.add_argument("--remote-debugging-port=9222")
 
-driver = webdriver.Chrome(options=options)
+from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.chrome.service import Service
+
+driver = webdriver.Chrome(
+    service=Service(ChromeDriverManager().install()),
+    options=options
+)
 
 # Import our custom webdriver utility
 from .webdriver_utils import setup_webdriver
